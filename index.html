@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <script>(function(){var r=document.documentElement;r.classList.remove('no-js');
 /* la firma: finché main.js non parte c'è il medaglione vuoto; se il codice non arriva, dopo 2,5 s il medaglione finito */
 try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add('firma-attesa');window.__attesaMedaglione=setTimeout(function(){r.classList.remove('firma-attesa')},2500)}}catch(e){}})()</script>
@@ -20,15 +21,58 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Judson:wght@400;700&amp;family=Encode+Sans+Semi+Condensed:wght@400;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 <script src="js/main.js?v=1" defer></script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"HairSalon","name":"G&G Parrucchieri","description":"L'atelier di Gabriel e Giorgio in Via Santa Maria Valle 5 a Milano: balayage, meches, shatush, colore, taglio e piega, trattamenti e acconciature da sposa.","url":"https://rotenzark.github.io/g-e-g-parrucchieri/","image":"https://rotenzark.github.io/g-e-g-parrucchieri/img/og.jpg","telephone":"+39 02 8909 4942","address":{"@type":"PostalAddress","streetAddress":"Via Santa Maria Valle 5","postalCode":"20123","addressLocality":"Milano","addressRegion":"MI","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":45.4598131,"longitude":9.1842622},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Friday","Saturday"],"opens":"09:30","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Thursday"],"opens":"09:30","closes":"19:30"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"71","bestRating":"5"},"sameAs":["https://www.treatwell.it/salone/g-g-parrucchieri-1/"]}
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "G&G Parrucchieri",
+  "description": "L'atelier di Gabriel e Giorgio in Via Santa Maria Valle 5 a Milano: balayage, meches, shatush, colore, taglio e piega, trattamenti e acconciature da sposa.",
+  "url": "https://rotenzark.github.io/g-e-g-parrucchieri/",
+  "image": "https://rotenzark.github.io/g-e-g-parrucchieri/img/og.jpg",
+  "telephone": "+39 02 8909 4942",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Santa Maria Valle 5",
+    "postalCode": "20123",
+    "addressLocality": "Milano",
+    "addressRegion": "MI",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.4598131,
+    "longitude": 9.1842622
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Tuesday",
+        "Wednesday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "09:30",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Thursday"
+      ],
+      "opens": "09:30",
+      "closes": "19:30"
+    }
+  ],
+  "sameAs": [
+    "https://www.treatwell.it/salone/g-g-parrucchieri-1/"
+  ]
+}
 </script>
 </head>
 <body>
@@ -113,7 +157,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
       <p class="apertura__frase" data-i18n="h.testo">Un salone fra due archi e una colonna di granito, a due passi da Via Torino: gli specchi ovali, le poltroncine rosse e il tempo per scegliere insieme.</p>
       <p class="voto"><b class="voto__n">5,0</b> <span class="voto__su" data-i18n="h.google">su Google, 71 recensioni</span></p>
       <blockquote class="citazione">
-        <p>«[…] A Gabri basta uno sguardo per consigliarti il colore, il taglio e la piega che ti valorizzano di più […]»</p>
+        <p lang="it">«[…] A Gabri basta uno sguardo per consigliarti il colore, il taglio e la piega che ti valorizzano di più […]»</p>
         <footer data-i18n="h.chi">Sissi, in una recensione su Google</footer>
       </blockquote>
       <p class="stato" id="orarioStato">Dal martedì al sabato, dalle 9:30</p>
@@ -177,12 +221,12 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <h2 id="diconoT" class="capitolo__titolo" data-i18n="d.titolo">Chi viene, poi resta</h2>
     <p class="voto voto--sezione"><b class="voto__n">5,0</b> <span class="voto__su" data-i18n="d.google">su Google, 71 recensioni</span></p>
     <ul class="medaglie">
-      <li class="medaglia reveal"><p class="medaglia__testo">«Ho conosciuto Gabriel e Giorgio qualche anno fa, dopo un’estenuante ricerca, (sono un po’ esigente in fatto di capelli, li ritengo importantissimi)Non li ho mai più lasciati! e non sono MAI uscita dal loro bellissimo negozio delusa. La loro cortesia, attenzione e amore per il lavoro emergono chiaramente durante ogni incontro. Il rapporto qualità-prezzo è eccellente, e i risultati con i colori sono veramente meravigliosi. L'atmosfera è rilassante, e Gabriel dedica tutto il tempo necessario per garantire un'esperienza personalizzata. Consiglio vivamente!»</p><p class="medaglia__chi"><b>Alessia Blandi</b> <span data-i18n="d.g2a">Google, 2 anni fa</span></p></li>
-      <li class="medaglia reveal"><p class="medaglia__testo">«Altro che 5 🌟 ! Tutto lo staff dal momento in cui sono entrata mi ha fatto sentire al mio agio, avevo un po’ al di paura al inizio visto le condizioni dei miei capelli ( rossicci ,secchi e spenti) non sapevo cosa aspettarmi e solo dopo una estenuante ricerca ho trovato G&amp;g parrucchieri  ! Gabriele ha fatto un  ottimo lavoro con i mei capelli dal colore al taglio tutto fatto con molta precisione e che devo dire  letteralmente ha salvato i miei capelli🥹 Ve lo consiglio!Tornerò di sicuro 🫶🏼»</p><p class="medaglia__chi"><b>Melanie Hidalgo Ballon</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
-      <li class="medaglia reveal"><p class="medaglia__testo">«Gabry mi ha letteralmente salvato i capelli, vittime di tutte quelle decolorazioni fatte malissimo!! Sono sua cliente dal 2019 e esco sempre con il sorriso dal suo salone!!Mi affido a lui ciecamente e so che ne uscirò sempre soddisfattissima!!Consigliatissimo! ❤️»</p><p class="medaglia__chi"><b>Giulia B</b> <span data-i18n="d.g3a">Google, 3 anni fa</span></p></li>
-      <li class="medaglia reveal"><p class="medaglia__testo">«Non so quanti parrucchieri avrò cambiato a Milano nella mia vita, ma non per infedeltà, anzi, semplicemente perché i parrucchieri sono come i fidanzati: quando ti hanno in pugno, ti danno per scontata, non ti coccolano più e ti dedicano meno attenzione :-) […] Mi sono trovata molto bene perché Gabriele è bravissimo sia sul taglio che sul colore. E' estremamente preciso e punta alla perfezione. […] Ci tornerò presto e lo consiglio.»</p><p class="medaglia__chi"><b>Silvia Gorlini</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
-      <li class="medaglia reveal"><p class="medaglia__testo">«Esperienza fantastica. Gabriel ha capito subito la mia idea e ha saputo esaltare al massimo la resa con la sua capacità professionale. Consigli mirati che hanno conquistato subito la mia fiducia, dandogli libertà creativa. Risultato eccezionale. Non ero mai uscita così contenta e soddisfatta da un parrucchiere. Tutto il team SUPER in tutti i sensi. Ottima qualità prezzo. CONSIGLIATISSIMO.[…]»</p><p class="medaglia__chi"><b>Ingrid Olivetti</b> <span data-i18n="d.g3a">Google, 3 anni fa</span></p></li>
-      <li class="medaglia reveal"><p class="medaglia__testo">«Una garanzia di professionalità, bravura, attenzione e cura. E pure qualche coccola. Ormai il mio posto di fiducia.»</p><p class="medaglia__chi"><b>Alessandra De Ferrari</b> <span data-i18n="d.g7m">Google, 7 mesi fa</span></p></li>
+      <li class="medaglia reveal"><p lang="it" class="medaglia__testo">«Ho conosciuto Gabriel e Giorgio qualche anno fa, dopo un’estenuante ricerca, (sono un po’ esigente in fatto di capelli, li ritengo importantissimi)Non li ho mai più lasciati! e non sono MAI uscita dal loro bellissimo negozio delusa. La loro cortesia, attenzione e amore per il lavoro emergono chiaramente durante ogni incontro. Il rapporto qualità-prezzo è eccellente, e i risultati con i colori sono veramente meravigliosi. L'atmosfera è rilassante, e Gabriel dedica tutto il tempo necessario per garantire un'esperienza personalizzata. Consiglio vivamente!»</p><p class="medaglia__chi"><b>Alessia Blandi</b> <span data-i18n="d.g2a">Google, 2 anni fa</span></p></li>
+      <li class="medaglia reveal"><p lang="it" class="medaglia__testo">«Altro che 5 🌟 ! Tutto lo staff dal momento in cui sono entrata mi ha fatto sentire al mio agio, avevo un po’ al di paura al inizio visto le condizioni dei miei capelli ( rossicci ,secchi e spenti) non sapevo cosa aspettarmi e solo dopo una estenuante ricerca ho trovato G&amp;g parrucchieri  ! Gabriele ha fatto un  ottimo lavoro con i mei capelli dal colore al taglio tutto fatto con molta precisione e che devo dire  letteralmente ha salvato i miei capelli🥹 Ve lo consiglio!Tornerò di sicuro 🫶🏼»</p><p class="medaglia__chi"><b>Melanie Hidalgo Ballon</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
+      <li class="medaglia reveal"><p lang="it" class="medaglia__testo">«Gabry mi ha letteralmente salvato i capelli, vittime di tutte quelle decolorazioni fatte malissimo!! Sono sua cliente dal 2019 e esco sempre con il sorriso dal suo salone!!Mi affido a lui ciecamente e so che ne uscirò sempre soddisfattissima!!Consigliatissimo! ❤️»</p><p class="medaglia__chi"><b>Giulia B</b> <span data-i18n="d.g3a">Google, 3 anni fa</span></p></li>
+      <li class="medaglia reveal"><p lang="it" class="medaglia__testo">«Non so quanti parrucchieri avrò cambiato a Milano nella mia vita, ma non per infedeltà, anzi, semplicemente perché i parrucchieri sono come i fidanzati: quando ti hanno in pugno, ti danno per scontata, non ti coccolano più e ti dedicano meno attenzione :-) […] Mi sono trovata molto bene perché Gabriele è bravissimo sia sul taglio che sul colore. E' estremamente preciso e punta alla perfezione. […] Ci tornerò presto e lo consiglio.»</p><p class="medaglia__chi"><b>Silvia Gorlini</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
+      <li class="medaglia reveal"><p lang="it" class="medaglia__testo">«Esperienza fantastica. Gabriel ha capito subito la mia idea e ha saputo esaltare al massimo la resa con la sua capacità professionale. Consigli mirati che hanno conquistato subito la mia fiducia, dandogli libertà creativa. Risultato eccezionale. Non ero mai uscita così contenta e soddisfatta da un parrucchiere. Tutto il team SUPER in tutti i sensi. Ottima qualità prezzo. CONSIGLIATISSIMO.[…]»</p><p class="medaglia__chi"><b>Ingrid Olivetti</b> <span data-i18n="d.g3a">Google, 3 anni fa</span></p></li>
+      <li class="medaglia reveal"><p lang="it" class="medaglia__testo">«Una garanzia di professionalità, bravura, attenzione e cura. E pure qualche coccola. Ormai il mio posto di fiducia.»</p><p class="medaglia__chi"><b>Alessandra De Ferrari</b> <span data-i18n="d.g7m">Google, 7 mesi fa</span></p></li>
     </ul>
     <p class="dicono__nota"><span data-i18n="d.nota">Dalle recensioni su Google, come sono state scritte; […] dove abbiamo tagliato. La frase in alto è di un'altra cliente, sempre su Google.</span> <a href="https://www.google.com/maps/search/?api=1&amp;query=G%26G+Parrucchieri%2C+Via+Santa+Maria+Valle+5%2C+20123+Milano" target="_blank" rel="noopener" data-i18n="d.tutte">Tutte le recensioni su Google</a></p>
   </section>
@@ -217,7 +261,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     </div>
     <p class="orari__nota" data-i18n="o.nota">Orari dalla nostra scheda Google (settembre 2026).</p>
     <div class="cartina reveal">
-      <iframe title="Mappa: G&amp;G Parrucchieri, Via Santa Maria Valle 5, Milano" data-i18n-title="w.mappa" src="https://maps.google.com/maps?q=G%26G%20Parrucchieri%2C%20Via%20Santa%20Maria%20Valle%205%2C%2020123%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="mappa-clic" data-mappa-clic style="--mappa-h: 400px"><template><iframe title="Mappa: G&amp;G Parrucchieri, Via Santa Maria Valle 5, Milano" data-i18n-title="w.mappa" src="https://maps.google.com/maps?q=G%26G%20Parrucchieri%2C%20Via%20Santa%20Maria%20Valle%205%2C%2020123%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=G%26G+Parrucchieri%2C+Via+Santa+Maria+Valle+5%2C+20123+Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
     </div>
   </section>
 
@@ -230,7 +274,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <p class="piede__dove">Via Santa Maria Valle 5, 20123 Milano · <a href="tel:+390289094942" class="intero">02 8909 4942</a></p>
     <p class="piede__orario" data-i18n="f2.orario">Dal martedì al sabato 9:30–19 · il giovedì fino alle 19:30</p>
     <p class="piede__social"><a href="https://www.treatwell.it/salone/g-g-parrucchieri-1/" target="_blank" rel="noopener">Treatwell</a></p>
-    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · orari, voto e recensioni dalla loro scheda Google (settembre 2026); le foto del salone da Treatwell e i colori dalla loro scheda Google. Il medaglione l'abbiamo ridisegnato noi, dal loro logo.</p>
+    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a> · orari, voto e recensioni dalla loro scheda Google (settembre 2026); le foto del salone da Treatwell e i colori dalla loro scheda Google. Il medaglione l'abbiamo ridisegnato noi, dal loro logo.</p>
     <p><a class="piede__su" href="#inizio" data-i18n="f2.su">Torna su ↑</a></p>
   </div>
 </footer>
@@ -245,5 +289,6 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
   <img id="lightboxImg" src="" alt="">
 </div>
 
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
